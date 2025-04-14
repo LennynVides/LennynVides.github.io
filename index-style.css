@@ -1,0 +1,94 @@
+body {
+    background-image: url('/fondo3.jpeg'); /* Aquí va la ruta de tu imagen */
+    background-color: #000;  /* Mantén el fondo negro en caso de que la imagen no se cargue */
+    background-size: cover;  /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center center;  /* Centra la imagen en la pantalla */
+    background-attachment: fixed;  /* Hace que la imagen permanezca fija mientras haces scroll */
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+
+.navbar {
+    background-color: #111;
+    border-bottom: 3px solid red;
+}
+
+.navbar-brand span {
+    color: red;
+}
+
+/* Estilo de los títulos con fuente de grafiti */
+.section-title {
+    text-align: center;
+    margin-top: 40px;
+    color: #fff;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.card {
+    background-color: #1a1a1a;
+    border: 2px solid #444;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%;  /* Asegura que las cards ocupen todo el ancho disponible */
+    height: 500px; /* Define una altura fija para todas las cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px red;
+}
+
+.card-title {
+    color: red;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5rem; /* Ajusta el tamaño de los títulos */
+    margin-top: 10px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 300px;  /* Define una altura fija para las imágenes */
+    object-fit: cover;  /* Ajusta la imagen para que cubra el área sin distorsionarse */
+}
+
+.btn-custom {
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+.btn-custom:hover {
+    background-color: darkred;
+}
+
+.footer {
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid red;
+    font-size: 1rem;
+}
+
+.footer i {
+    color: red;
+}
+
+/* Nuevas clases para visibilidad con IntersectionObserver */
+.card.hidden {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.card.visible {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}

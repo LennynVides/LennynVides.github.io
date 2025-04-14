@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+body {
+
+    background-color: #000;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3rem;
+    color: red;
+    text-shadow: 2px 2px 4px #000;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #ddd;
+    margin-top: 10px;
+}
+
+.main-image img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    border: 3px solid red;
+    box-shadow: 0 0 10px red;
+    margin-top: 20px;
+}
+
+.image-gallery {
+    margin-top: 50px;
+}
+
+.image-gallery h2 {
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    margin-bottom: 30px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #1a1a1a;
+    border: 2px solid #444;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px red;
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-body h3 {
+    color: red;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.2rem;
+}
+
+/* Botón personalizado de regreso */
+.btn-back {
+    background-color: red;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 5px;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s ease;
+    text-decoration: none; /* Asegura que el enlace no tenga subrayado */
+    display: inline-block;
+}
+
+.btn-back:hover {
+    background-color: darkred;
+    transform: scale(1.1);
+}
+
+/* Ajustes de responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    .image-gallery h2 {
+        font-size: 2rem;
+    }
+
+    .card {
+        height: auto;
+    }
+
+    .card img {
+        height: 220px;
+    }
+
+    .btn-back {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
