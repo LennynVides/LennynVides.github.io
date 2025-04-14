@@ -8,7 +8,7 @@ const cortes = [
     // Cortes Modernos
     {
         id: 'taper-fade',
-        nombre: 'Taper Fades',
+        nombre: 'Fades',
         descripcion: 'Degradado moderno con volumen en la parte superior. Ideal para un look limpio y fresco.',
         imagen360: '../cortes/fade.avif',
         categoria: 'moderno'
